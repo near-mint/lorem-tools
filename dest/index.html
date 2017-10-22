@@ -9,6 +9,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <!-- Favicon business
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -655,6 +665,13 @@
   form {
     margin-bottom: 2.5rem; }
   
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: #fff3bf; }
+  
+  ::selection {
+    background: #fff3bf; }
+  
   .footer {
     padding: 40px 0; }
   
@@ -668,10 +685,10 @@
     margin-left: 30px; }
   
   .charCountReport.zeroChars {
-    color: red; }
+    color: #c30200; }
   
   .charCountReport {
-    color: green;
+    color: #3c7d00;
     text-align: right;
     font-weight: 900;
     font-size: 2.4rem;
@@ -681,10 +698,19 @@
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71898565-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-71898565-2');
+  </script>
+
+
   <script>
   function bindReport() {
-    //TODO: change this interval that's for testing to something bound to mouseup/keyup
-    //var test = setInterval(function() {reportOnSelection()}, 3000);
   
     document.addEventListener("mousedown", reportOnSelection);
     document.addEventListener("mouseup", reportOnSelection);
