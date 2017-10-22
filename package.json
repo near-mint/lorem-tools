@@ -1,0 +1,26 @@
+{
+  "name": "lorem-tools",
+  "version": "0.0.1",
+  "description": "Turn here when you need some lorem ipsum dummy text.",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://lorem.tools",
+  "author": "Matthew Clark <matt@whoismattclark.com>  (http://whoismattclark.com/)",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-grunt": "^1.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-embed": "^0.2.1",
+    "grunt-sass": "^1.2.0"
+  }
+}

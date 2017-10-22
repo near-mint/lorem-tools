@@ -1,0 +1,28 @@
+.footer {
+  padding: 40px 0;
+}
+
+.icon-link {
+  position: relative;
+}
+
+.icon-link svg {
+  position: absolute;
+}
+
+.icon-link span {
+  margin-left: 30px;
+}
+
+.charCountReport.zeroChars {
+  color: red;
+}
+
+.charCountReport {
+  color: green;
+  text-align: right;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
