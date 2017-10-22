@@ -1,6 +1,12 @@
 function bindReport() {
-  //TODO: change this interval that's for testing to something bound to mouseup/keyup
-  var test = setInterval(function() {reportOnSelection()}, 3000);
+
+  document.addEventListener("mousedown", reportOnSelection);
+  document.addEventListener("mouseup", reportOnSelection);
+  document.addEventListener("onkeyup", reportOnSelection);
+  document.addEventListener("onkeydown", reportOnSelection);
+  document.addEventListener("onkeydown", reportOnSelection);
+  document.onselectionchange = function() { reportOnSelection();};
+
 }
 
 function reportOnSelection() {
@@ -31,3 +37,5 @@ function reportOnSelection() {
 function stopTest() {
   clearInterval(test);
 }
+
+bindReport();
