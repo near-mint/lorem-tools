@@ -1,3 +1,5 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -14,6 +16,9 @@ module.exports = function(grunt) {
           }
         },
         sass: {
+            options: {
+                implementation: sass
+            },
             dist: {
                 options: {
                     style: 'expanded'
@@ -29,7 +34,7 @@ module.exports = function(grunt) {
               threshold: '15KB'
             },
             files: {
-              'dest/index.html': 'src/index.html'
+              './index.html': 'src/index.html'
             }
           }
         },

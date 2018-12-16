@@ -11,16 +11,16 @@
   },
   "homepage": "https://lorem.tools",
   "author": "Matthew Clark <matt@whoismattclark.com>  (http://whoismattclark.com/)",
-  "keywords": [
-  ],
+  "keywords": [],
   "license": "MIT",
   "devDependencies": {
     "eslint-grunt": "^1.0.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-embed": "^0.2.1",
-    "grunt-sass": "^1.2.0"
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.11.0"
   }
 }
